@@ -4,8 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import rocks.zipcode.assessment2.arrays.IntegerArrayUtils;
 
-import java.util.Arrays;
-
 /**
  * @author leon on 28/11/2018.
  */
@@ -18,7 +16,7 @@ public class IncrementEvenTest {
 
 
         // when
-        Integer[] actual = IntegerArrayUtils.incrementEven(input);
+        Integer[] actual = IntegerArrayUtils.incrementEven(input, input);
 
         // then
         Assert.assertArrayEquals(expected, actual);
@@ -31,7 +29,7 @@ public class IncrementEvenTest {
         Integer[] expected = {11,21,31,1,3,5};
 
         // when
-        Integer[] actual = IntegerArrayUtils.incrementEven(input);
+        Integer[] actual = IntegerArrayUtils.incrementEven(input, input);
 
         // then
         Assert.assertArrayEquals(expected, actual);
