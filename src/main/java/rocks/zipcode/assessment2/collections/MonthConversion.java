@@ -1,5 +1,7 @@
 package rocks.zipcode.assessment2.collections;
 
+import java.util.TreeMap;
+
 /**
  * Use a map to solve
  */
@@ -9,6 +11,12 @@ public class MonthConversion {
      * @param monthName - name of month
      */
     public void add(Integer monthNumber, String monthName) {
+        MonthConversion conversion = new MonthConversion();
+
+        conversion.add(monthNumber, monthName);
+
+
+
 
     }
 
@@ -17,7 +25,12 @@ public class MonthConversion {
      * @return the name of the respective month
      */
     public String getName(Integer monthNumber) {
+        MonthConversion conversion = new MonthConversion();
+        conversion.add(3, "March");
         throw new NullPointerException();
+
+
+
     }
 
     /**
