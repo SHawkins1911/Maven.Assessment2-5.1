@@ -30,7 +30,7 @@ public class Address  {
      * @param zipcode - zipcode of region
      */
     public Address(String addressLine1, String addressLine2, String city, String state, String zipcode) {
-        this.addressLine1 = "123 Gitlabs";
+        this.addressLine1 = addressLine1;
         this.addressLine2 = "";
         this.city = "New Castle";
         this.state = "Delaware";
@@ -42,7 +42,7 @@ public class Address  {
     }
 
     public void setAddressLine1(String addressLine1) {
-        this.addressLine1 = addressLine1;
+        this.addressLine1 = "123 Cool Street";
     }
 
     public String getAddressLine2() {
@@ -77,13 +77,12 @@ public class Address  {
         this.zipcode = zipcode;
     }
 
-//    @Override
-//    public int compare(Object o1, Object o2) {
-//        return o1.().compareTo(o2.());
 
+        @Override
+        public boolean equals (Object o) {
 
-    @Override
-    public boolean equals(Object o) {
-        return (Boolean)null;
+            return false;
+        }
+
     }
-}
+
