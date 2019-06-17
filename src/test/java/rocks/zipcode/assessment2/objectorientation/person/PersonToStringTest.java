@@ -28,7 +28,7 @@ public class PersonToStringTest {
         // given
         Long id = Long.MAX_VALUE;
         String name = "PersonName";
-        Address address = new Address("line1","line2", "city","state","99999");
+        String address = new Address("line1","line2", "city","state","99999");
         String expected = "Person{id=9223372036854775807, name='PersonName', address=Address{addressLine1='line1', addressLine2='line2', city='city', state='state', zipcode='99999'}}";
         Person person = new Person(id, name, address);
 

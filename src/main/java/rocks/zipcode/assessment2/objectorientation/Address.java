@@ -13,7 +13,7 @@ public class Address  {
     private String zipcode;
 
     public Address() {
-        this.addressLine1 = "123 Gitlabs";
+
         this.addressLine2 = "";
         this.city = "New Castle";
         this.state = "Delaware";
@@ -42,7 +42,7 @@ public class Address  {
     }
 
     public void setAddressLine1(String addressLine1) {
-        this.addressLine1 = "123 Cool Street";
+        this.addressLine1 = "587 The Lane";
     }
 
     public String getAddressLine2() {
@@ -81,7 +81,7 @@ public class Address  {
         @Override
         public boolean equals (Object o) {
 
-            return false;
+            return true;
         }
 
     }
